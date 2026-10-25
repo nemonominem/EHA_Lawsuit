@@ -27,9 +27,9 @@ The viewer loads pdf.js from a CDN, so an internet connection is needed.
 
 | Tab | Content |
 |---|---|
-| 1. The dispute | The story, the basic timeline, the cast, the board, and the 6 January 2025 firing call, with tape quotes |
-| 2. The legal pipeline | The document groups (A–H) and how the court decided |
-| 3. The "broke" claim | What the record shows about Daszak's pay, the house, and the verdict |
+| 1. The "broke" claim | The verdict, what the record shows about Daszak's pay, the house and the pension, and a conclusion |
+| 2. The dispute | The story, the basic timeline, the cast, the board, and the 6 January 2025 firing call, with tape quotes |
+| 3. The legal pipeline | The document groups (A–H) and how the court decided |
 | 4. Nature Health Global | Daszak's new nonprofit: its return, pay, funders, and checks against IRS data |
 
 Features: four themes (Midnight, Slate, Paper, Day; Paper is the default), a collapsible and resizable contents panel, and a document pane at the side or bottom. The pane offers single-page, double-page and continuous views, zoom, and arrow-key navigation while the pointer or focus is in the pane. "doc N" references in the text open the matching PDF.
