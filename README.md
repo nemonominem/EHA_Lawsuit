@@ -32,7 +32,7 @@ The viewer loads pdf.js from a CDN, so an internet connection is needed.
 | 3. The legal pipeline | The document groups (A–H) and how the court decided |
 | 4. Nature Health Global | Daszak's new nonprofit: its return, pay, funders, and checks against IRS data |
 
-Features: four themes (Midnight, Slate, Paper, Day; Paper is the default), a collapsible and resizable contents panel, and a document pane at the side or bottom. The pane offers single-page, double-page and continuous views, zoom, and arrow-key navigation while the pointer or focus is in the pane. "doc N" references in the text open the matching PDF.
+Features: four themes (Midnight, Slate, Paper, Day; Paper is the default), a collapsible and resizable contents panel, and a document pane at the side or bottom. The pane has two tabs: **Court Fillings** (the 71 NYSCEF documents) and **990s** (EHA's Form 990s, the EHA Form 990-T, Nature Health Global's 990-EZ and the Wallace Research Foundation's 990s). The pane offers single-page, double-page and continuous views, zoom, and arrow-key navigation while the pointer or focus is in the pane. "doc N" references in the text open the matching court document, and year references such as 2024-25 open the matching 990. Clicking a link switches to the right tab.
 
 ## Folder layout
 
@@ -40,7 +40,7 @@ Features: four themes (Midnight, Slate, Paper, Day; Paper is the default), a col
 |---|---|
 | `00_Case_Explainer.html` | The explainer (single file; the house illustration is embedded) |
 | `fillings/` | The 71 court PDFs, numbered by NYSCEF document number, plus `CV_3S.png` |
-| `990/` | `NHG_Form990-EZ_2025_redacted.pdf`: Nature Health Global's Form 990-EZ with the street address, town and ZIP+4 redacted. The original filing is unchanged elsewhere |
+| `990s/` | `NHG_Form990-EZ_2025_redacted.pdf`: Nature Health Global's Form 990-EZ with the street address, town and ZIP+4 redacted (the original filing is unchanged elsewhere). Also copies of EHA's Form 990s for the years to 30 June 2009 to 2026 (`EHA_Form990_<years>.pdf`), the EHA Form 990-T for 2018-19, and the Wallace Research Foundation's 2021 and 2022 Form 990s. Copied from `EHA-Corporate/990s`, renamed, with byte-identical duplicates left out. The originals are unchanged. Manual edits in this folder: the IRS privacy-notice first page was removed from the scans for 2008-09 to 2014-15, and 2016-17 was downloaded again. Checked before copying (text and OCR of the scans): no home address for Daszak or anyone else. The addresses are EHA's offices and those of other organisations (grantees, vendors) |
 | `Open_Case_Explainer.sh` | Local-server launcher |
 | `other/` | Working material, **not tracked by git** (see `.gitignore`) and **not shown in the viewer** |
 

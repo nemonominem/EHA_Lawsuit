@@ -320,6 +320,11 @@ body.pdf-portrait .rz{left:0;right:0;top:0;height:6px;cursor:row-resize}
 .pdfbar{display:flex;gap:6px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--line);background:var(--side);font:13px/1.2 -apple-system,sans-serif;flex-shrink:0;flex-wrap:wrap}
 .pdfbar select{min-width:0;font:13px -apple-system,sans-serif;padding:6px;border-radius:6px;border:1px solid var(--line-strong);background:var(--input);color:var(--ink)}
 #dsel{flex:1}
+/* document-pane tabs: Court Fillings | 990s (same pattern as the Fauci Diary's Main Docs / Linked Docs) */
+.pdf-tabs{display:flex;gap:2px;padding:6px 8px 0;background:var(--panel);border-bottom:1px solid var(--line);flex-shrink:0}
+.pdf-tab{background:var(--side);color:var(--mute);border:1px solid var(--line-strong);border-bottom:none;padding:6px 12px;border-radius:6px 6px 0 0;cursor:pointer;font:600 12px -apple-system,sans-serif}
+.pdf-tab:hover{color:var(--ink);background:var(--line-strong)}
+.pdf-tab.on{background:var(--bg);color:var(--ink);border-color:var(--line)}
 .pdfbar input{width:64px;font:13px -apple-system,sans-serif;padding:5px;border-radius:6px;border:1px solid var(--line-strong);background:var(--input);color:var(--ink)}
 .pdfbar .pg{color:var(--mute)}
 .pdfbar .sep{width:1px;align-self:stretch;background:var(--line);margin:0 4px}
@@ -346,7 +351,7 @@ body.pdf-portrait .rz{left:0;right:0;top:0;height:6px;cursor:row-resize}
 <section class="panel" id="p1" data-tab="1" role="tabpanel"><h1>About this page</h1><div class="about"><p><strong>About this page.</strong> It is two things in one: a guide to the court record in <em>Daszak v. EcoHealth Alliance</em>, and an analysis of the case and of some of the claims the plaintiff makes.</p>
 <ul>
 <li><strong>For a quick overview:</strong> read the &quot;broke&quot; tab, then &quot;The dispute&quot;, which tells the story in four short paragraphs and a timeline.</li>
-<li><strong>For research:</strong> the filings sit in the document pane on the right (all 71, plus Nature Health Global's tax return). Every number in brackets in the text, such as (65), opens the filing it comes from. &quot;The legal pipeline&quot; maps the documents by stage, from the complaint to the appeal.</li>
+<li><strong>For research:</strong> the documents sit in the document pane on the right, under two tabs: <strong>Court Fillings</strong> (all 71 filings) and <strong>990s</strong> (EHA's Form 990s, Nature Health Global's return and the Wallace Research Foundation's returns). Every number in brackets in the text, such as (65), opens the filing it comes from, and a year such as 2024-25 opens its tax return. &quot;The legal pipeline&quot; maps the documents by stage, from the complaint to the appeal.</li>
 <li><strong>What is record and what is reading:</strong> the documents and the public filings are the record. The conclusions, headed &quot;My analysis&quot; and &quot;Conclusion&quot;, are the author's reading of them.</li>
 </ul>
 </div><div class="intro"><p><strong>Case:</strong> <em>Dr. Peter Daszak, Ph.D. v. EcoHealth Alliance Inc., Stephen Shapiro and 17 other directors</em>
@@ -396,7 +401,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <li><strong>Legal weight.</strong> None of the three claims depends on it. It is context for damages and sympathy, and the judge never mentioned it.</li>
 </ul>
 <h2 id="t1-2">What the numbers say</h2>
-<p><strong>Source.</strong> Daszak's compensation as an EHA officer for the sixteen years from 2009-10 to 2024-25, taken from the Schedule J of each EHA Form 990 (Part VII for the totals). EHA's tax year runs 1 July to 30 June. Several of the returns are image-only PDFs, so their figures were read from the page images. &quot;Other benefits&quot; is whatever is left of the total after base, bonus and employer retirement: mainly non-taxable benefits such as health cover.</p>
+<p><strong>Source.</strong> Daszak's compensation as an EHA officer for the sixteen years from <a class="docref" href="#" data-doc="E2010" data-page="31">2009-10</a> to <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a>, taken from the Schedule J of each EHA Form 990 (Part VII for the totals). Each return is in the 990s tab, and every year label in the tables opens it. EHA's tax year runs 1 July to 30 June. Several of the returns are image-only PDFs, so their figures were read from the page images. &quot;Other benefits&quot; is whatever is left of the total after base, bonus and employer retirement: mainly non-taxable benefits such as health cover.</p>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -410,7 +415,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 </thead>
 <tbody>
 <tr>
-<td>2009-10</td>
+<td><a class="docref" href="#" data-doc="E2010" data-page="31">2009-10</a></td>
 <td style="text-align:right">$234,697</td>
 <td style="text-align:right">$205,500</td>
 <td style="text-align:right">$0</td>
@@ -418,7 +423,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$18,922</td>
 </tr>
 <tr>
-<td>2010-11</td>
+<td><a class="docref" href="#" data-doc="E2011" data-page="33">2010-11</a></td>
 <td style="text-align:right">$288,376</td>
 <td style="text-align:right">$252,500</td>
 <td style="text-align:right">$0</td>
@@ -426,7 +431,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$23,251</td>
 </tr>
 <tr>
-<td>2011-12</td>
+<td><a class="docref" href="#" data-doc="E2012" data-page="33">2011-12</a></td>
 <td style="text-align:right">$290,487</td>
 <td style="text-align:right">$240,000</td>
 <td style="text-align:right">$10,000</td>
@@ -434,7 +439,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$27,987</td>
 </tr>
 <tr>
-<td>2012-13</td>
+<td><a class="docref" href="#" data-doc="E2013" data-page="33">2012-13</a></td>
 <td style="text-align:right">$302,115</td>
 <td style="text-align:right">$260,250</td>
 <td style="text-align:right">$0</td>
@@ -442,7 +447,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$28,852</td>
 </tr>
 <tr>
-<td>2013-14</td>
+<td><a class="docref" href="#" data-doc="E2014" data-page="32">2013-14</a></td>
 <td style="text-align:right">$314,695</td>
 <td style="text-align:right">$259,000</td>
 <td style="text-align:right">$10,000</td>
@@ -450,7 +455,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$32,245</td>
 </tr>
 <tr>
-<td>2014-15</td>
+<td><a class="docref" href="#" data-doc="E2015" data-page="33">2014-15</a></td>
 <td style="text-align:right">$336,513</td>
 <td style="text-align:right">$266,750</td>
 <td style="text-align:right">$20,000</td>
@@ -458,7 +463,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$35,425</td>
 </tr>
 <tr>
-<td>2015-16</td>
+<td><a class="docref" href="#" data-doc="E1516" data-page="32">2015-16</a></td>
 <td style="text-align:right">$353,981</td>
 <td style="text-align:right">$277,450</td>
 <td style="text-align:right">$30,000</td>
@@ -466,7 +471,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$46,531</td>
 </tr>
 <tr>
-<td>2016-17</td>
+<td><a class="docref" href="#" data-doc="E1617" data-page="33">2016-17</a></td>
 <td style="text-align:right">$377,400</td>
 <td style="text-align:right">$284,323</td>
 <td style="text-align:right">$43,000</td>
@@ -474,7 +479,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$50,077</td>
 </tr>
 <tr>
-<td>2017-18</td>
+<td><a class="docref" href="#" data-doc="E1718" data-page="56">2017-18</a></td>
 <td style="text-align:right">$385,228</td>
 <td style="text-align:right">$294,365</td>
 <td style="text-align:right">$42,250</td>
@@ -482,7 +487,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$48,613</td>
 </tr>
 <tr>
-<td>2018-19</td>
+<td><a class="docref" href="#" data-doc="E1819" data-page="66">2018-19</a></td>
 <td style="text-align:right">$410,801</td>
 <td style="text-align:right">$311,815</td>
 <td style="text-align:right">$42,250</td>
@@ -490,7 +495,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$32,236</td>
 </tr>
 <tr>
-<td>2019-20</td>
+<td><a class="docref" href="#" data-doc="E1920" data-page="63">2019-20</a></td>
 <td style="text-align:right">$460,368</td>
 <td style="text-align:right">$324,265</td>
 <td style="text-align:right">$47,000</td>
@@ -498,7 +503,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$59,402</td>
 </tr>
 <tr>
-<td>2020-21</td>
+<td><a class="docref" href="#" data-doc="E2021" data-page="32">2020-21</a></td>
 <td style="text-align:right">$472,785</td>
 <td style="text-align:right">$334,338</td>
 <td style="text-align:right">$60,950</td>
@@ -506,7 +511,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$45,421</td>
 </tr>
 <tr>
-<td>2021-22</td>
+<td><a class="docref" href="#" data-doc="E2122" data-page="33">2021-22</a></td>
 <td style="text-align:right">$482,666</td>
 <td style="text-align:right">$347,401</td>
 <td style="text-align:right">$60,000</td>
@@ -514,7 +519,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$42,451</td>
 </tr>
 <tr>
-<td>2022-23</td>
+<td><a class="docref" href="#" data-doc="E2223" data-page="33">2022-23</a></td>
 <td style="text-align:right">$498,197</td>
 <td style="text-align:right">$360,649</td>
 <td style="text-align:right">$61,150</td>
@@ -522,7 +527,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$42,424</td>
 </tr>
 <tr>
-<td>2023-24</td>
+<td><a class="docref" href="#" data-doc="E2324" data-page="33">2023-24</a></td>
 <td style="text-align:right">$483,963</td>
 <td style="text-align:right">$383,590</td>
 <td style="text-align:right">$60,000</td>
@@ -530,7 +535,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$4,886</td>
 </tr>
 <tr>
-<td>2024-25</td>
+<td><a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a></td>
 <td style="text-align:right">$458,905</td>
 <td style="text-align:right">$379,239</td>
 <td style="text-align:right">$0</td>
@@ -547,7 +552,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 </tr>
 </tbody>
 </table></div>
-<p>All figures are before tax. &quot;Bonus&quot; is the 990's &quot;Bonus &amp; incentive compensation&quot; column; Part 2 covers how EHA describes it. The $0 retirement figures for 2015-16 to 2017-18 are probably contributions reported under &quot;Other benefits&quot;: the combined figure barely changes (about $49K) and EHA still reported pension contributions in those years.</p>
+<p>All figures are before tax. &quot;Bonus&quot; is the 990's &quot;Bonus &amp; incentive compensation&quot; column; Part 2 covers how EHA describes it. The $0 retirement figures for <a class="docref" href="#" data-doc="E1516" data-page="32">2015-16</a> to <a class="docref" href="#" data-doc="E1718" data-page="56">2017-18</a> are probably contributions reported under &quot;Other benefits&quot;: the combined figure barely changes (about $49K) and EHA still reported pension contributions in those years.</p>
 <h3 id="t1-3">Retirement contributions: the minimum the record supports</h3>
 <p>The handbook (<a class="docref" href="#" data-doc="52">52</a>, section 14.6) says EHA pays <strong>5%</strong> of salary into the TIAA-CREF plan whatever the employee does, and <strong>matches the employee's own contribution on the first 3%</strong>. So EHA pays at least 5% and at most 8%, and the match is paid only if the employee puts in the same amount. The 990 column shows what EHA reported, not what Daszak paid in. His own minimum can be read from the match.</p>
 <div class="tw"><table>
@@ -563,7 +568,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 </thead>
 <tbody>
 <tr>
-<td>2009-10</td>
+<td><a class="docref" href="#" data-doc="E2010" data-page="31">2009-10</a></td>
 <td style="text-align:right">$205,500</td>
 <td style="text-align:right">$10,275</td>
 <td style="text-align:right">$10,275</td>
@@ -571,7 +576,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$10,275</td>
 </tr>
 <tr>
-<td>2010-11</td>
+<td><a class="docref" href="#" data-doc="E2011" data-page="33">2010-11</a></td>
 <td style="text-align:right">$252,500</td>
 <td style="text-align:right">$12,625</td>
 <td style="text-align:right">$12,625</td>
@@ -579,7 +584,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$12,625</td>
 </tr>
 <tr>
-<td>2011-12</td>
+<td><a class="docref" href="#" data-doc="E2012" data-page="33">2011-12</a></td>
 <td style="text-align:right">$250,000</td>
 <td style="text-align:right">$12,500</td>
 <td style="text-align:right">$12,500</td>
@@ -587,7 +592,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$12,500</td>
 </tr>
 <tr>
-<td>2012-13</td>
+<td><a class="docref" href="#" data-doc="E2013" data-page="33">2012-13</a></td>
 <td style="text-align:right">$260,250</td>
 <td style="text-align:right">$13,013</td>
 <td style="text-align:right">$13,013</td>
@@ -595,7 +600,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$13,013</td>
 </tr>
 <tr>
-<td>2013-14</td>
+<td><a class="docref" href="#" data-doc="E2014" data-page="32">2013-14</a></td>
 <td style="text-align:right">$269,000</td>
 <td style="text-align:right">$13,450</td>
 <td style="text-align:right">$13,450</td>
@@ -603,7 +608,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$13,450</td>
 </tr>
 <tr>
-<td>2014-15</td>
+<td><a class="docref" href="#" data-doc="E2015" data-page="33">2014-15</a></td>
 <td style="text-align:right">$286,750</td>
 <td style="text-align:right">$14,338</td>
 <td style="text-align:right">$14,338</td>
@@ -611,7 +616,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$14,338</td>
 </tr>
 <tr>
-<td>2015-16</td>
+<td><a class="docref" href="#" data-doc="E1516" data-page="32">2015-16</a></td>
 <td style="text-align:right">$307,450</td>
 <td style="text-align:right">$0</td>
 <td style="text-align:right">$15,372*</td>
@@ -619,7 +624,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$15,372</td>
 </tr>
 <tr>
-<td>2016-17</td>
+<td><a class="docref" href="#" data-doc="E1617" data-page="33">2016-17</a></td>
 <td style="text-align:right">$327,323</td>
 <td style="text-align:right">$0</td>
 <td style="text-align:right">$16,366*</td>
@@ -627,7 +632,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$16,366</td>
 </tr>
 <tr>
-<td>2017-18</td>
+<td><a class="docref" href="#" data-doc="E1718" data-page="56">2017-18</a></td>
 <td style="text-align:right">$336,615</td>
 <td style="text-align:right">$0</td>
 <td style="text-align:right">$16,831*</td>
@@ -635,7 +640,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$16,831</td>
 </tr>
 <tr>
-<td>2018-19</td>
+<td><a class="docref" href="#" data-doc="E1819" data-page="66">2018-19</a></td>
 <td style="text-align:right">$354,065</td>
 <td style="text-align:right">$24,500</td>
 <td style="text-align:right">$24,500</td>
@@ -643,7 +648,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$31,297</td>
 </tr>
 <tr>
-<td>2019-20</td>
+<td><a class="docref" href="#" data-doc="E1920" data-page="63">2019-20</a></td>
 <td style="text-align:right">$371,265</td>
 <td style="text-align:right">$29,701</td>
 <td style="text-align:right">$29,701</td>
@@ -651,7 +656,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$40,839</td>
 </tr>
 <tr>
-<td>2020-21</td>
+<td><a class="docref" href="#" data-doc="E2021" data-page="32">2020-21</a></td>
 <td style="text-align:right">$395,288</td>
 <td style="text-align:right">$32,076</td>
 <td style="text-align:right">$32,076</td>
@@ -659,7 +664,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$43,935</td>
 </tr>
 <tr>
-<td>2021-22</td>
+<td><a class="docref" href="#" data-doc="E2122" data-page="33">2021-22</a></td>
 <td style="text-align:right">$407,401</td>
 <td style="text-align:right">$32,814</td>
 <td style="text-align:right">$32,814</td>
@@ -667,7 +672,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$45,036</td>
 </tr>
 <tr>
-<td>2022-23</td>
+<td><a class="docref" href="#" data-doc="E2223" data-page="33">2022-23</a></td>
 <td style="text-align:right">$421,799</td>
 <td style="text-align:right">$33,974</td>
 <td style="text-align:right">$33,974</td>
@@ -675,7 +680,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$46,628</td>
 </tr>
 <tr>
-<td>2023-24</td>
+<td><a class="docref" href="#" data-doc="E2324" data-page="33">2023-24</a></td>
 <td style="text-align:right">$443,590</td>
 <td style="text-align:right">$35,487</td>
 <td style="text-align:right">$35,487</td>
@@ -683,7 +688,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <td style="text-align:right">$48,795</td>
 </tr>
 <tr>
-<td>2024-25</td>
+<td><a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a></td>
 <td style="text-align:right">$379,239</td>
 <td style="text-align:right">$35,487</td>
 <td style="text-align:right">$35,487</td>
@@ -700,7 +705,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 </tr>
 </tbody>
 </table></div>
-<p>* <strong>The three $0 years (2015-16 to 2017-18).</strong> The 990 shows $0 in column C, but the plan owes the 5% whatever the employee does, so the amount was most likely reported in another column: Schedule J column (D), &quot;Nontaxable benefits&quot;, which is where our &quot;Other benefits&quot; figure comes from. A contribution to a qualified plan is not taxable income, so that column is the natural place for it. The returns do not say so. The evidence is the pattern: &quot;Other benefits&quot; rises from $35,425 in 2014-15 to $46,531, $50,077 and $48,613, then falls to $32,236 in 2018-19, the year column C resumes at $24,500. Column C plus &quot;Other benefits&quot; stays at about $47K to $50K throughout. The starred figure is the plan's floor, 5% of base plus bonus.</p>
+<p>* <strong>The three $0 years (<a class="docref" href="#" data-doc="E1516" data-page="32">2015-16</a> to <a class="docref" href="#" data-doc="E1718" data-page="56">2017-18</a>).</strong> The returns (<a class="docref" href="#" data-doc="E1516" data-page="32">2015-16</a>, <a class="docref" href="#" data-doc="E1617" data-page="33">2016-17</a>, <a class="docref" href="#" data-doc="E1718" data-page="56">2017-18</a>) show $0 in column C, but the plan owes the 5% whatever the employee does, so the amount was most likely reported in another column: Schedule J column (D), &quot;Nontaxable benefits&quot;, which is where our &quot;Other benefits&quot; figure comes from. A contribution to a qualified plan is not taxable income, so that column is the natural place for it. The returns do not say so. The evidence is the pattern: &quot;Other benefits&quot; rises from $35,425 in <a class="docref" href="#" data-doc="E2015" data-page="33">2014-15</a> to $46,531, $50,077 and $48,613, then falls to $32,236 in <a class="docref" href="#" data-doc="E1819" data-page="66">2018-19</a>, the year column C resumes at $24,500. Column C plus &quot;Other benefits&quot; stays at about $47K to $50K throughout. The starred figure is the plan's floor, 5% of base plus bonus.</p>
 <p>The derivation of these figures — why the 5% floor is not double counting, how Daszak's own share is read from the employer match, and the year-by-year caveats — is set out in the <strong>Annexe</strong> at the end of this tab, together with the wider breakdown of the pay.</p>
 <h2 id="t1-4">His real estate</h2>
 <h3 id="t1-5">The latest villa</h3>
@@ -743,7 +748,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 <h3 id="t1-6">The previous house</h3>
 <ul>
 <li><strong>What it was.</strong> A 1962 colonial of about 1,900 square feet in a neighbouring town, a few miles from the new villa, so very much a local upgrade.</li>
-<li><strong>Bought and sold.</strong> He bought it in December 2001 for $293,500, the year his CV (<a class="docref" href="#" data-doc="3">3</a>) shows him moving from the University of Georgia to New York as executive director of the Consortium for Conservation Medicine, and about when the complaint dates his 24 years at EHA. He sold it on 7 August 2015 for <strong>$445,000</strong>, 6% above its $419,900 asking price. The listing went up in April 2015. The 7 August date matches the calendar entry &quot;Close on&quot; that property, five days before the closing on the villa.</li>
+<li><strong>Bought and sold.</strong> He bought it in December 2001 for $293,500, the year his CV (<a class="docref" href="#" data-doc="3">3</a>) shows him moving from the University of Georgia to New York as executive director of the Consortium for Conservation Medicine, and the complaint's 24 years at EHA would reach back to about that time, although the CV dates his EHA presidency from 2009. He sold it on 7 August 2015 for <strong>$445,000</strong>, 6% above its $419,900 asking price. The listing went up in April 2015. The 7 August date matches the calendar entry &quot;Close on&quot; that property, five days before the closing on the villa.</li>
 <li><strong>The upgrade.</strong> The villa cost $665,000, about 49% more. It has twice the floor area (about 3,830 square feet), a 1908 design by McKim, Mead &amp; White, 1.78 acres, a library, three fireplaces, a potting shed and a four-car garage. The sale price of the old house equals about two thirds of the price of the new one.</li>
 <li><strong>Gain.</strong> $151,500 over fourteen years, or 52%, before selling costs.</li>
 </ul>
@@ -754,7 +759,7 @@ New York Supreme Court, New York County, Commercial Division (Part 54, Justice J
 </blockquote>
 <p>The two sales and purchases show how that sits with the record. His mortgage terms are not in the record, so the figures below are an illustration with typical terms.</p>
 <ul>
-<li><strong>What he was paid.</strong> EHA's returns show <strong>$1.77 million</strong> in the six years to June 2015 (2009-10 to 2014-15), and <strong>$4.38 million</strong> in the ten years from July 2015 to June 2025, both before tax. His earlier years at EHA are not in the returns reviewed.</li>
+<li><strong>What he was paid.</strong> EHA's returns show <strong>$1.77 million</strong> in the six years to June 2015 (<a class="docref" href="#" data-doc="E2010" data-page="31">2009-10</a> to <a class="docref" href="#" data-doc="E2015" data-page="33">2014-15</a>), and <strong>$4.38 million</strong> in the ten years from July 2015 to June 2025, both before tax. His earlier years at EHA are not in the returns reviewed.</li>
 <li><strong>First house, bought with 10% down.</strong> He puts $29,350 down on the $293,500 price and borrows $264,150 over 30 years at 7%, a usual rate in late 2001. The payment is about $1,760 a month. By August 2015 the balance is about $205,000.</li>
 <li><strong>First house, sold at a gain, tax included.</strong> The sale at $445,000 costs about 6% in agent's fees and closing costs, including New York's transfer tax, about $26,700. The taxable gain is then about $124,800 ($445,000 less costs less the $293,500 price). Federal law excludes up to $250,000 of gain on a main home ($500,000 for a married couple filing jointly), so no tax is due on it. After the $205,000 mortgage, he walks away with about <strong>$213,000</strong> in cash.</li>
 <li><strong>Villa, bought with a mortgage.</strong> Put the $213,000 into the $665,000 villa and he borrows about <strong>$452,000</strong>, 68% of the price, at 4% over 30 years. The payment is about $2,160 a month, or $25,900 a year, plus roughly $30,000 a year in property tax. That is a small part of an annual pay of $350,000 to $500,000.</li>
@@ -771,7 +776,7 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <li><strong>&quot;The board never identified the cause.&quot;</strong> The complaint says so. On the call the chair gives the reason, &quot;loss of confidence,&quot; and EHA gave HHS the same reason a week later.</li>
 <li><strong>&quot;Without the severance I am doomed.&quot;</strong> The severance clause covers staff laid off for non-performance reasons, against a signed release. He was asking for it when HHS had found the organisation's own failures behind the loss of funds: late progress reports and unreported risky experiments in Wuhan.</li>
 <li><strong>A board that never answered.</strong> In 2021 ten scientists and academics, among them Jamie Metzl and Gilles Demaneuf, <a href="https://www.researchgate.net/publication/355020382_Call_for_the_Board_of_EcoHealth_Alliance_to_remove_Dr_Peter_Daszak_as_President_of_their_organization">wrote to the board asking for his removal</a>. The board did not reply publicly.</li>
-<li><strong>No money to collect from EHA — but that is not who he is suing.</strong> EHA's final 990 shows net assets of $1.14M falling to zero, &quot;no remaining assets to distribute,&quot; and $152,049 of legal fees paid to Nutter McClennen &amp; Fish in December 2025. A win against EHA alone would be a win against an empty shell. But the suit does not rest on EHA: Daszak named the eighteen directors personally and demanded their insurance policies (<a class="docref" href="#" data-doc="38">38</a>), so what he is really pursuing is the directors and EHA's directors-and-officers cover, not the dissolved nonprofit's assets.</li>
+<li><strong>No money to collect from EHA — but that is not who he is suing.</strong> EHA's <a class="docref" href="#" data-doc="E2526" data-page="10">final 990</a> shows net assets of $1.14M falling to zero, &quot;<a class="docref" href="#" data-doc="E2526" data-page="20">no remaining assets to distribute</a>,&quot; and <a class="docref" href="#" data-doc="E2526" data-page="20">$152,049</a> of legal fees paid to Nutter McClennen &amp; Fish in December 2025. A win against EHA alone would be a win against an empty shell. But the suit does not rest on EHA: Daszak named the eighteen directors personally and demanded their insurance policies (<a class="docref" href="#" data-doc="38">38</a>), so what he is really pursuing is the directors and EHA's directors-and-officers cover, not the dissolved nonprofit's assets.</li>
 </ul>
 <p>Each point can be checked against the documents cited on this page. The board acted on its own grounds on 2 January 2025, before the lawsuit. What he has said and sworn since fits its reading and bears out its decision. A chief executive who presents the facts as suit the moment, to funders, to his board and then to a judge, is not someone a board can trust to speak for the organisation, least of all one facing debarment.</p>
 <h2 id="t1-9">Annexe — the detailed numbers</h2>
@@ -788,16 +793,16 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <p><em>Pay is unchanged.</em> The $6.15M total is the sum of every column, so it already contains the 5%, wherever EHA put it. Moving it from &quot;Other benefits&quot; to &quot;Retirement&quot; would change the split, not the total. The $48,569 is added only to the retirement tally, never to pay. The retirement figures and the pay figures are not to be added together.</p>
 </li>
 <li>
-<p><strong>Reference figure.</strong> Employer plus employee contributions of at least <strong>$428,164</strong> over sixteen years. Of that, $300,240 is what EHA reported in column C, $48,569 is the 5% floor in the three years reported as $0, and $79,355 is Daszak's own minimum. Without the doubtful 2024-25 year it is <strong>$381,300</strong>.</p>
+<p><strong>Reference figure.</strong> Employer plus employee contributions of at least <strong>$428,164</strong> over sixteen years. Of that, $300,240 is what EHA reported in column C, $48,569 is the 5% floor in the three years reported as $0, and $79,355 is Daszak's own minimum. Without the doubtful <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a> year it is <strong>$381,300</strong>.</p>
 </li>
 <li>
-<p><strong>How his own share is worked out.</strong> For each year with a reported figure it is the reported amount minus 5% of base plus bonus, capped at 3% of base plus bonus (the most the match can be). From 2019-20 the reported amount is about 8% of base plus bonus, so the full match was being paid. That needs him to have put in at least 3% himself, about $11K to $13K a year. In the three $0 years the match cannot be read, so his share is left at $0.</p>
+<p><strong>How his own share is worked out.</strong> For each year with a reported figure it is the reported amount minus 5% of base plus bonus, capped at 3% of base plus bonus (the most the match can be). From <a class="docref" href="#" data-doc="E1920" data-page="63">2019-20</a> the reported amount is about 8% of base plus bonus, so the full match was being paid. That needs him to have put in at least 3% himself, about $11K to $13K a year. In the three $0 years the match cannot be read, so his share is left at $0.</p>
 </li>
 <li>
 <p><strong>Assumptions.</strong> The handbook rule applied in every year (the copy in the record is from 2024), the plan's &quot;salary&quot; includes the bonus, and the match is dollar for dollar. His own contributions are not reported on the 990, so that part is inferred, and it is a floor.</p>
 </li>
 <li>
-<p><strong>2024-25.</strong> The $35,487 equals exactly 8% of the 2023-24 base plus bonus, so it was probably carried over and the 2024-25 figure may be too high.</p>
+<p><strong><a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a>.</strong> The $35,487 equals exactly 8% of the <a class="docref" href="#" data-doc="E2324" data-page="33">2023-24</a> base plus bonus, so it was probably carried over and the <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a> figure may be too high.</p>
 </li>
 </ul>
 <h3 id="t1-11">The wider picture</h3>
@@ -806,13 +811,13 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <ul>
 <li>Sixteen years of reported compensation total <strong>$6.15M</strong>, an average of <strong>$384K a year</strong>.</li>
 <li>The last ten years total <strong>$4.38M</strong>.</li>
-<li>The last five (2020-21 to 2024-25) total <strong>$2.40M</strong>, about <strong>$479K a year</strong>.</li>
+<li>The last five (<a class="docref" href="#" data-doc="E2021" data-page="32">2020-21</a> to <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a>) total <strong>$2.40M</strong>, about <strong>$479K a year</strong>.</li>
 <li>The peak was $498K in 2022-23.</li>
 </ul>
 </li>
 <li><strong>Retirement.</strong>
 <ul>
-<li>The returns report $32K to $35K a year of retirement and deferred compensation from 2020-21: <strong>$169,838</strong> over the five years. The 2024-25 figure is identical to 2023-24 ($35,487), which may be a carried-over number.</li>
+<li>The returns report $32K to $35K a year of retirement and deferred compensation from <a class="docref" href="#" data-doc="E2021" data-page="32">2020-21</a>: <strong>$169,838</strong> over the five years. The <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a> figure is identical to <a class="docref" href="#" data-doc="E2324" data-page="33">2023-24</a> ($35,487), which may be a carried-over number.</li>
 <li>The returns answer &quot;No&quot; to a supplemental nonqualified retirement plan every year, so there was no executive-only pension.</li>
 <li>EHA ran a staff retirement plan. The employee handbook (<a class="docref" href="#" data-doc="52">52</a>, section 14.6) describes a TIAA-CREF plan to which EHA contributes 5% of salary, plus a match of the first 3% of the employee's own contribution, and EHA's cash-flow sheet carries a &quot;Pension Plan - TIAA CREF&quot; line.</li>
 <li>On the call Daszak says he has &quot;no pension&quot; and that he does not &quot;have enough money in a retirement to retire.&quot; Shapiro answers &quot;EcoHealth has a pension,&quot; and Daszak then speaks of what he would get at 67: &quot;a fraction of the salary I'm getting now.&quot;</li>
@@ -822,17 +827,17 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 </li>
 <li><strong>A puzzle in the last return.</strong>
 <ul>
-<li>The 2024-25 return reports <strong>$379K of base pay</strong> for a year in which Daszak was fired on 6 Jan, six months in. That is close to a full year's salary, and the same return says &quot;No&quot; to any severance payment.</li>
+<li>The <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a> return reports <strong>$379K of base pay</strong> for a year in which Daszak was fired on 6 Jan, six months in. That is close to a full year's salary, and the same return says &quot;No&quot; to any severance payment.</li>
 <li>Possible explanations: pay continued to the end of the fiscal year, accrued leave was paid out, or the figure was reported on a different basis. The return does not say which.</li>
 <li>If salary did continue, it would sit uneasily with the picture of being &quot;thrown out on the street.&quot;</li>
 <li>The complaint also says Daszak stayed on the board until June 2025.</li>
 </ul>
 </li>
-<li><strong>What the EHA 990s cannot show.</strong> Spouse's income, savings, other assets, debts, legal bills, or whether the 2020-24 pay was spent. The sworn complaint itself says Daszak is &quot;President of the nonprofit Nature Health Global&quot; and Editor-in-Chief of the Springer-Nature journal <em>EcoHealth</em> (<a class="docref" href="#" data-doc="1">7</a>), next to &quot;unemployed.&quot; Part 4 covers that return.</li>
+<li><strong>What the EHA 990s cannot show.</strong> Spouse's income, savings, other assets, debts, legal bills, or whether the <a class="docref" href="#" data-doc="E2021" data-page="32">2020-21</a> to <a class="docref" href="#" data-doc="E2324" data-page="33">2023-24</a> pay was spent. The sworn complaint itself says Daszak is &quot;President of the nonprofit Nature Health Global&quot; and Editor-in-Chief of the Springer-Nature journal <em>EcoHealth</em> (<a class="docref" href="#" data-doc="1">7</a>), next to &quot;unemployed.&quot; Part 4 covers that return.</li>
 </ol>
 </section><section class="panel" id="p3" data-tab="3" role="tabpanel"><h1>The dispute</h1><h2 id="t2-0">Summary</h2>
 <h3 id="t2-1">The story</h3>
-<p>Peter Daszak ran EcoHealth Alliance (EHA) for 24 years, according to the complaint. Before COVID he was not well known outside virology. EHA presented itself as a small New York nonprofit studying bat viruses, but it worked inside the US biodefense research effort and took part in &quot;Track II&quot; scientific exchanges with China. It lived on federal money, and its largest funder was the Pentagon, mostly through the Defense Threat Reduction Agency: about $39 million between 2013 and 2020 (<a href="https://independentsciencenews.org/news/peter-daszaks-ecohealth-alliance-has-hidden-almost-40-million-in-pentagonfunding/">Husseini, Dec 2020</a>). Then COVID arrived, and Congress and federal agencies went after the group and Daszak over research it had funded in Wuhan.</p>
+<p>Peter Daszak ran EcoHealth Alliance (EHA) for 24 years, according to the complaint. His CV (<a class="docref" href="#" data-doc="3">3</a>) dates his presidency of EHA from 2009 to 2025. Before COVID he was not well known outside virology. EHA presented itself as a small New York nonprofit studying bat viruses, but it worked inside the US biodefense research effort and took part in &quot;Track II&quot; scientific exchanges with China. It lived on federal money, and its largest funder was the Pentagon, mostly through the Defense Threat Reduction Agency: about $39 million between 2013 and 2020 (<a href="https://independentsciencenews.org/news/peter-daszaks-ecohealth-alliance-has-hidden-almost-40-million-in-pentagonfunding/">Husseini, Dec 2020</a>). Then COVID arrived, and Congress and federal agencies went after the group and Daszak over research it had funded in Wuhan.</p>
 <p>On 30 September 2021, ten scientists and academics from the Paris Group, an informal network pressing for a full inquiry into the origins of COVID, wrote to EHA's board asking it to remove Daszak as president. Jamie Metzl and Gilles Demaneuf were among the co-authors (<a href="https://www.researchgate.net/publication/355020382_Call_for_the_Board_of_EcoHealth_Alliance_to_remove_Dr_Peter_Daszak_as_President_of_their_organization">the letter, on ResearchGate</a>; <a href="https://undark.org/2021/11/24/scientists-square-off-over-covid-wuhan-and-peter-daszak/">Undark's account</a>). They accused Daszak of hiding conflicts of interest and of misleading the public about what he knew of the Wuhan lab's work, and warned that if he stayed he would take EHA down with him. The board never answered publicly. FOIA documents show it asked the signatories to keep quiet for a while, and Metzl told Undark the letter had been &quot;met with silence.&quot;</p>
 <p>The board moved only when the government did. After HHS suspended the group in May 2024, funding froze, and over the following months Daszak laid off most of the staff on the board's instruction, with two weeks' severance for each year of service. On 2 January 2025 the board voted to terminate him. On 6 January, in a Zoom call that Daszak recorded, the chair told him he was out for &quot;loss of confidence,&quot; offering six months of health cover, relocation costs and consulting at $300 an hour in exchange for a waiver of claims, but none of the severance the laid-off staff had received. HHS debarred EHA and Daszak for five years eleven days later, and EHA was dissolved by June 2026.</p>
 <p>Daszak sued in November 2025 for age discrimination and breach of contract. On 28 July 2026 a judge dismissed the case from the bench at oral argument, with no discovery, and Daszak filed a notice of appeal on 25 August.</p>
@@ -846,7 +851,7 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 </ul>
 <h2 id="t2-3">The cast</h2>
 <ul>
-<li><strong>Peter Daszak:</strong> 59 at the firing. At EHA since about 2000–2001, and its president and CEO for 24 years (per the complaint). He was also a board member and the named principal investigator on the NIH grant that sent money to the Wuhan Institute of Virology. The complaint says he has raised over $150 million from donors, corporations, foundations and federal agencies.</li>
+<li><strong>Peter Daszak:</strong> 59 at the firing. His CV (<a class="docref" href="#" data-doc="3">3</a>) lists him as President of EHA from 2009 to 2025 and before that as Executive Director of the Consortium for Conservation Medicine, 2001 to 2009. The complaint says he was EHA's president and CEO for 24 years. EHA's <a class="docref" href="#" data-doc="E2009" data-page="1">2008-09 return</a> already names him as principal officer. He was also a board member and the named principal investigator on the NIH grant that sent money to the Wuhan Institute of Virology. The complaint says he has raised over $150 million from donors, corporations, foundations and federal agencies.</li>
 <li><strong>EcoHealth Alliance:</strong> a New York-based nonprofit that lived on federal grants (about 80% of revenue, per the complaint).</li>
 <li><strong>Stephen Shapiro:</strong> board chair, who delivered the news.</li>
 <li><strong>Ellen Shedlarz:</strong> vice chair, on the call.</li>
@@ -860,7 +865,7 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <ul>
 <li>A lawyer, private investor and real estate entrepreneur, managing partner of BSR Investments (since 2006) and Benjamin Shapiro Realty (since 1983).</li>
 <li>He spends most of his time on national security and foreign policy. He is Senior Advisor to the Atlantic Council's Scowcroft Center (since December 2020), a former director of the Atlantic Council, and a long-time member and former director of Business Executives for National Security (BENS), a business group that works with the national-security establishment (all per his LinkedIn page).</li>
-<li>He joined EHA's board in April 2023, as the group faced several investigations, with no scientific or medical background that his profile mentions (<a href="https://disinformationchronicle.substack.com/p/once-praised-by-nobel-laureates-ecohealth">Paul Thacker, DisInformation Chronicle, 18 Nov 2025</a>). EHA's 2024-25 tax return lists him as Chair at 20 hours a week, against 3 hours for the other directors.</li>
+<li>He joined EHA's board in April 2023, as the group faced several investigations, with no scientific or medical background that his profile mentions (<a href="https://disinformationchronicle.substack.com/p/once-praised-by-nobel-laureates-ecohealth">Paul Thacker, DisInformation Chronicle, 18 Nov 2025</a>). EHA's <a class="docref" href="#" data-doc="E2425" data-page="17">2024-25</a> tax return lists him as Chair at 20 hours a week, against 3 hours for the other directors.</li>
 <li>One may read his BENS role as a sign that he is close to the CIA (<a href="https://x.com/gdemaneuf/status/1991658960789622798">post</a>).</li>
 </ul>
 </li>
@@ -996,13 +1001,13 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <li>In the affidavit (<a class="docref" href="#" data-doc="52">52</a>): &quot;$368K severance (my prior base, without the bonuses I regularly received).&quot;</li>
 <li><strong>The figure is a formula, and it lands close to last year's base pay.</strong>
 <ul>
-<li>The 990s show base pay of $383,590 in 2023-24 (the figure on the CFO's August 2024 report) and $379,239 in 2024-25.</li>
+<li>The 990s show base pay of $383,590 in <a class="docref" href="#" data-doc="E2324" data-page="33">2023-24</a> (the figure on the CFO's August 2024 report) and $379,239 in <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a>.</li>
 <li>The handbook's formula is &quot;up to two weeks of severance pay for each year of service.&quot;</li>
-<li>Twenty-five years × 2 weeks = 50 weeks. $383,590 × 50/52 = <strong>$368,837</strong>, about nine months of his total pay.</li>
+<li>On the call's 25 years, 2 weeks × 25 = 50 weeks. $383,590 × 50/52 = <strong>$368,837</strong>, about nine months of his total pay.</li>
 <li>So $368K is 50 weeks of base pay, and $380K on the call is the same number rounded up. It sits close to the $379K reported for the last year because 50 weeks is 96% of a year. It is not derived from the $379K.</li>
 </ul>
 </li>
-<li><strong>Years of service:</strong> the complaint says 24 years, the call says 25. At 24 years the formula gives about $354K.</li>
+<li><strong>Years of service:</strong> the complaint says 24 years, the call says 25, and the CV (<a class="docref" href="#" data-doc="3">3</a>) gives 2009 to 2025, sixteen years. The formula gives about $368K at 25 years, about $354K at 24 years, and about $236K at sixteen years. The CV does not show earlier service at EHA, so the record leaves the start date open.</li>
 <li><strong>The bonus is excluded.</strong> The annual &quot;bonus&quot; (about $60K in recent years) is not in the base. The next box covers what the 990s say it is.</li>
 <li><strong>The source is not in the record.</strong>
 <ul>
@@ -1018,9 +1023,9 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <li><strong>Where it appears.</strong> Schedule J, Part II, column (B)(ii), headed &quot;Bonus &amp; incentive compensation.&quot; It is separate from base pay, &quot;other reportable compensation,&quot; retirement contributions and non-taxable benefits.</li>
 <li><strong>How EHA describes it.</strong>
 <ul>
-<li>Every year from 2015-16 to 2023-24, Schedule J Part III says: &quot;The bonuses are non-fixed and are merit based. The Chair of the Board of Directors evaluates the President and recommends a bonus based on his performance.&quot;</li>
-<li>In the 2023-24 return, the other-staff version adds that supervisors recommend bonuses for other staff, approved by a personnel committee.</li>
-<li>The final return (2025-26) says the Board's Executive Committee &quot;reviewed and approved the bonuses ... based on performance.&quot;</li>
+<li>Every year from <a class="docref" href="#" data-doc="E1516" data-page="32">2015-16</a> to <a class="docref" href="#" data-doc="E2324" data-page="34">2023-24</a>, Schedule J Part III says: &quot;The bonuses are non-fixed and are merit based. The Chair of the Board of Directors evaluates the President and recommends a bonus based on his performance.&quot;</li>
+<li>In the <a class="docref" href="#" data-doc="E2324" data-page="34">2023-24</a> return, the other-staff version adds that supervisors recommend bonuses for other staff, approved by a personnel committee.</li>
+<li>The final return (<a class="docref" href="#" data-doc="E2526" data-page="19">2025-26</a>) says the Board's Executive Committee &quot;reviewed and approved the bonuses ... based on performance.&quot;</li>
 </ul>
 </li>
 <li><strong>Daszak's own pleading.</strong>
@@ -1047,43 +1052,43 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 </thead>
 <tbody>
 <tr>
-<td>2015-16</td>
+<td><a class="docref" href="#" data-doc="E1516" data-page="32">2015-16</a></td>
 <td style="text-align:right">$30,000</td>
 </tr>
 <tr>
-<td>2016-17</td>
+<td><a class="docref" href="#" data-doc="E1617" data-page="33">2016-17</a></td>
 <td style="text-align:right">$43,000</td>
 </tr>
 <tr>
-<td>2020-21</td>
+<td><a class="docref" href="#" data-doc="E2021" data-page="32">2020-21</a></td>
 <td style="text-align:right">$60,950</td>
 </tr>
 <tr>
-<td>2021-22</td>
+<td><a class="docref" href="#" data-doc="E2122" data-page="33">2021-22</a></td>
 <td style="text-align:right">$60,000</td>
 </tr>
 <tr>
-<td>2022-23</td>
+<td><a class="docref" href="#" data-doc="E2223" data-page="33">2022-23</a></td>
 <td style="text-align:right">$61,150</td>
 </tr>
 <tr>
-<td>2023-24</td>
+<td><a class="docref" href="#" data-doc="E2324" data-page="33">2023-24</a></td>
 <td style="text-align:right">$60,000</td>
 </tr>
 <tr>
-<td>2024-25</td>
+<td><a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a></td>
 <td style="text-align:right"><strong>$0</strong> (and $0 for every other listed executive)</td>
 </tr>
 </tbody>
 </table></div>
 <ul>
-<li><strong>So is it a bonus?</strong> By EHA's own wording it is a discretionary, performance-based payment, not salary. It was almost exactly $60,000 for four straight years. A forensic review of EHA (author and method not verified) criticised executive bonuses as unbenchmarked. In 2024-25 <strong>no executive received one</strong>, which fits an organisation under suspension.</li>
+<li><strong>So is it a bonus?</strong> By EHA's own wording it is a discretionary, performance-based payment, not salary. It was almost exactly $60,000 for four straight years. A forensic review of EHA (author and method not verified) criticised executive bonuses as unbenchmarked. In <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a> <strong>no executive received one</strong>, which fits an organisation under suspension.</li>
 </ul>
 <h2 id="t2-10">Act 4: The aftermath</h2>
 <ul>
 <li>The complaint says EHA moved its address to a Massachusetts P.O. box in June 2025.</li>
 <li>The defence brief says the board voted unanimously to begin dissolution, and Daszak's lawyer told the court EHA has since been dissolved (docs <a class="docref" href="#" data-doc="43">43</a>, <a class="docref" href="#" data-doc="62">62</a>, <a class="docref" href="#" data-doc="69">69</a>).</li>
-<li>The final tax return shows four remaining executives awarded $560,205 in severance on dissolution, while Daszak got none.
+<li>The <a class="docref" href="#" data-doc="E2526" data-page="18">final tax return</a> shows four remaining executives awarded $560,205 in severance on dissolution, while Daszak got none.
 <ul>
 <li>Two of those amounts match, to the dollar, rows in the severance table attached to Daszak's complaint (<a class="docref" href="#" data-doc="5">5</a>). The names are redacted there, so the match is by amount.</li>
 </ul>
@@ -1112,6 +1117,7 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <ul>
 <li>The complaint says the board &quot;never identified&quot; the cause for the firing. The recording shows the board saying &quot;loss of confidence.&quot;</li>
 <li>The complaint has dating errors: debarment in &quot;late January 2024&quot; (it was January 2025), and a firing date of 4 Jan versus 6 Jan. Gasperetti conceded the error in court, and the judge noted the timeline came from the complaint. His July 2026 affidavit also has a typo (&quot;January 6, 2026&quot;), and the request to amend is a single sentence.</li>
+<li>The complaint gives the wrong length of service. It says that &quot;for 24 years&quot; Daszak &quot;served as President and Chief Executive Officer of EHA&quot; (<a class="docref" href="#" data-doc="1" data-page="4">doc 1, p. 4</a>), and in the next paragraph that he &quot;has worked for more than 25 years&quot; in research and outreach (<a class="docref" href="#" data-doc="1" data-page="6">doc 1, p. 6</a>). His CV gives his EHA presidency as 2009 to 2025, sixteen years (<a class="docref" href="#" data-doc="3" data-page="2">doc 3, p. 2</a>). The 24 years cannot be a prior NGO, since the complaint ties it to EHA. The complaint does not reconcile the two figures, and the severance figure it relies on depends on the years counted (see &quot;Years of service&quot; above).</li>
 </ul>
 </li>
 <li><strong>The directors.</strong> Unpaid volunteers with statutory protection under New York not-for-profit law. Naming every director personally rests on conclusory &quot;conspired&quot; allegations.</li>
@@ -1348,8 +1354,8 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 </ul>
 <h2 id="t4-3">What it shows</h2>
 <ol>
-<li><strong>Daszak is not without income.</strong> In the first year after the firing he ran a new nonprofit that raised $135,740 and paid him $37,500, a small fraction of the roughly $459K reported for 2024-25.</li>
-<li><strong>The same circle.</strong> Chmura, who received $155,882 of severance from EHA on dissolution, is the new group's treasurer and signed its return.</li>
+<li><strong>Daszak is not without income.</strong> In the first year after the firing he ran a new nonprofit that raised $135,740 and paid him $37,500, a small fraction of the roughly $459K reported for <a class="docref" href="#" data-doc="E2425" data-page="44">2024-25</a>.</li>
+<li><strong>The same circle.</strong> Chmura, who received <a class="docref" href="#" data-doc="E2526" data-page="18">$155,882</a> of severance from EHA on dissolution, is the new group's treasurer and signed its return.</li>
 <li><strong>Income collapse, not nothing.</strong> Annual pay fell from about $480K to a fraction of that. But the sworn &quot;remains unemployed&quot; and &quot;unable to secure new employment&quot; (<a class="docref" href="#" data-doc="1">54</a>, <a class="docref" href="#" data-doc="1">65</a>) read poorly next to a paid presidency, and the complaint was verified on 31 Oct 2025, within the year this return covers.</li>
 <li><strong>Other roles.</strong> Daszak is also an unpaid director of the Accountability Journalism Institute Inc, a Brooklyn nonprofit with about $34K of revenue in 2025.</li>
 </ol>
@@ -1357,7 +1363,7 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <p>Daszak's own post names some of the funders. On 19 August 2025, announcing a paper by Nature Health Global scientists in <em>mBio</em> (<a href="https://doi.org/10.1128/mbio.01197-24">doi:10.1128/mbio.01197-24</a>), he wrote on NHG's website: &quot;When public funds were blocked, private donors and foundations came to our aid, including the Samuel Freeman Charitable Trust, The Wallace Fund, and an anonymous donor c/o Schwab Charitable&quot; (<a href="https://naturehealthglobal.org/new-paper-identifies-widespread-coronavirus-risk/">the post</a>). The paper also thanks the federal agencies that first paid for the work (NIH-NIAID, USAID's PREDICT project) and Chinese research bodies.</p>
 <ul>
 <li><strong>Samuel Freeman Charitable Trust.</strong> An EHA donor since 2017, cultivated through director Hoguet (a defendant). On the firing call Daszak said $125K was pledged from it for the coming year. The same donor followed him to NHG.</li>
-<li><strong>&quot;The Wallace Fund.&quot;</strong> The post does not say which Wallace fund. The Wallace Research Foundation funded EHA from 2020.</li>
+<li><strong>&quot;The Wallace Fund.&quot;</strong> The post does not say which Wallace fund. The Wallace Research Foundation funded EHA from 2020. Its <a class="docref" href="#" data-doc="W2021" data-page="9">2021</a> and <a class="docref" href="#" data-doc="W2022" data-page="9">2022</a> Form 990s are in the 990s tab.</li>
 <li><strong>An anonymous donor c/o Schwab Charitable.</strong> A donor-advised fund, which lets the donor stay unnamed. Paul Thacker reported this on 18 Nov 2025 (<a href="https://disinformationchronicle.substack.com/p/once-praised-by-nobel-laureates-ecohealth">DisInformation Chronicle</a>), and Daszak's post confirms it. The donor's identity is not public.</li>
 <li><strong>Amounts.</strong> None is stated. NHG's 2025 revenue was $135,740 in total, and the public return masks its donor schedule (next section).</li>
 <li><strong>A ban on federal money.</strong> Daszak is debarred until 2029, so NHG cannot take federal research money. That is why it relies on private donors.</li>
@@ -1371,7 +1377,7 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 <li>In the rendered form the donor name, address, amount and even the organisation-type and rule check-boxes come out blank or as &quot;RESTRICTED.&quot;</li>
 </ul>
 </li>
-<li><strong>EHA's returns look identical.</strong> The 2022-23 and 2023-24 EHA returns show the same single &quot;RESTRICTED&quot; row, even though EHA had many donors. So one row means nothing about how many donors NHG has.</li>
+<li><strong>EHA's returns look identical.</strong> The <a class="docref" href="#" data-doc="E2223" data-page="19">2022-23</a> and <a class="docref" href="#" data-doc="E2324" data-page="19">2023-24</a> EHA returns show the same single &quot;RESTRICTED&quot; row, even though EHA had many donors. So one row means nothing about how many donors NHG has.</li>
 <li><strong>What can be inferred.</strong> NHG's return includes a Schedule B at all, so it probably had at least one gift of $5,000 or more. The line H box is not legible in the render, so this is an inference. Schedule A reports $0 from &quot;disqualified persons,&quot; a group that includes officers, so Daszak and Chmura show no gifts there.</li>
 </ul>
 <h2 id="t4-6">Checking the funders against the IRS data</h2>
@@ -1393,7 +1399,7 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 </tr>
 <tr>
 <td><strong>&quot;The Wallace Fund&quot;</strong> (probably the Wallace Research Foundation, Cedar Rapids, Iowa)</td>
-<td>Proposals, budget and progress reports 2020-2022; &quot;no reporting required&quot; grant that also paid for the 2022 journalist trips; its 2021 and 2022 returns each list a grant to EHA for zoonotic-disease work in Southeast Asia (amounts not established)</td>
+<td>Proposals, budget and progress reports 2020-2022; &quot;no reporting required&quot; grant that also paid for the 2022 journalist trips; its <a class="docref" href="#" data-doc="W2021" data-page="9">2021</a> and <a class="docref" href="#" data-doc="W2022" data-page="9">2022</a> returns each list a grant to EHA for zoonotic-disease work in Southeast Asia (amounts not established)</td>
 <td>The Wallace Research Foundation's 2024 and 2025 returns list no grant to EHA or NHG, so the grant may come from another Wallace fund, or be too small or too recent to show. Its 2023 return was not checked</td>
 </tr>
 <tr>
@@ -1463,8 +1469,12 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 </ul>
 </section>
 </div></main>
-<aside id="pdf" aria-label="Court documents">
+<aside id="pdf" aria-label="Documents">
  <div class="rz" id="rz" title="Drag to resize"></div>
+ <div class="pdf-tabs" role="tablist">
+  <button class="pdf-tab" data-ptab="filings" role="tab">Court Fillings</button>
+  <button class="pdf-tab" data-ptab="returns" role="tab">990s</button>
+ </div>
  <div class="pdfbar">
   <button class="ib" id="dprev" aria-label="Previous document">‹</button>
   <select id="dsel" aria-label="Choose a document"></select>
@@ -1489,7 +1499,7 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
 </aside>
 <script>
 (function(){
-var DOCS=[{"id": "NHG", "file": "990/NHG_Form990-EZ_2025_redacted.pdf", "label": "Nature Health Global: Form 990-EZ, 2025 (address redacted)", "group": "Nature Health Global"}, {"id": "1", "file": "fillings/1_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__SUMMONS___COMPLAINT.pdf", "label": "Summons and complaint", "group": "Court record"}, {"id": "2", "file": "fillings/2_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__SUMMONS___COMPLAINT.pdf", "label": "Summons and complaint (second copy)", "group": "Court record"}, {"id": "3", "file": "fillings/3_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit: Daszak CV", "group": "Court record"}, {"id": "4", "file": "fillings/4_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit: EHA bylaws", "group": "Court record"}, {"id": "5", "file": "fillings/5_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit: staff severance table", "group": "Court record"}, {"id": "6", "file": "fillings/6_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "7", "file": "fillings/7_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "8", "file": "fillings/8_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "9", "file": "fillings/9_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "10", "file": "fillings/10_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "11", "file": "fillings/11_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "12", "file": "fillings/12_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "13", "file": "fillings/13_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "14", "file": "fillings/14_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "15", "file": "fillings/15_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "16", "file": "fillings/16_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "17", "file": "fillings/17_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "18", "file": "fillings/18_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "19", "file": "fillings/19_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "20", "file": "fillings/20_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "21", "file": "fillings/21_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "22", "file": "fillings/22_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "23", "file": "fillings/23_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service (Karen Denton attempt)", "group": "Court record"}, {"id": "24", "file": "fillings/24_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "25", "file": "fillings/25_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record"}, {"id": "26", "file": "fillings/26_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance (Hoguet firm)", "group": "Court record"}, {"id": "27", "file": "fillings/27_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___TIME_.pdf", "label": "Stipulation extending time", "group": "Court record"}, {"id": "28", "file": "fillings/28_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance (Hoguet firm)", "group": "Court record"}, {"id": "29", "file": "fillings/29_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance (Jackson Lewis)", "group": "Court record"}, {"id": "30", "file": "fillings/30_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___TIME_.pdf", "label": "Stipulation extending time", "group": "Court record"}, {"id": "31", "file": "fillings/31_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__RJI__RE__OTHER.pdf", "label": "Request for judicial intervention", "group": "Court record"}, {"id": "32", "file": "fillings/32_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__ADDENDUM___COMMERCI.pdf", "label": "Commercial Division addendum", "group": "Court record"}, {"id": "33", "file": "fillings/33_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__REQUEST_FOR_PRE_MOT.pdf", "label": "Defendants’ request for pre-motion conference", "group": "Court record"}, {"id": "34", "file": "fillings/34_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Letter on response deadline", "group": "Court record"}, {"id": "35", "file": "fillings/35_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance (Jackson Lewis)", "group": "Court record"}, {"id": "36", "file": "fillings/36_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Daszak’s letter opposing pre-motion (19 Feb 2026)", "group": "Court record"}, {"id": "37", "file": "fillings/37_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__ORDER___OTHER__NON_.pdf", "label": "Order: no permission needed to file (24 Feb 2026)", "group": "Court record"}, {"id": "38", "file": "fillings/38_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_DISCOVERY.pdf", "label": "Notice of discovery (insurance policies)", "group": "Court record"}, {"id": "39", "file": "fillings/39_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__CONSENT_TO_CHANGE_A.pdf", "label": "Consent to change attorney", "group": "Court record"}, {"id": "40", "file": "fillings/40_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___BRIEF.pdf", "label": "Stipulation and brief", "group": "Court record"}, {"id": "41", "file": "fillings/41_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__BRIEFING_SCHEDULE.pdf", "label": "Briefing schedule", "group": "Court record"}, {"id": "42", "file": "fillings/42_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_MOTION.pdf", "label": "Notice of motion to dismiss", "group": "Court record"}, {"id": "43", "file": "fillings/43_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__MEMORANDUM_OF_LAW_I.pdf", "label": "Defendants’ memorandum of law", "group": "Court record"}, {"id": "44", "file": "fillings/44_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIDAVIT_OR_AFFIRM.pdf", "label": "Affirmation of Joseph Anci", "group": "Court record"}, {"id": "45", "file": "fillings/45_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit A: House subcommittee hearing (1 May 2024)", "group": "Court record"}, {"id": "46", "file": "fillings/46_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit B: House staff report", "group": "Court record"}, {"id": "47", "file": "fillings/47_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit C: HHS suspension and debarment notice", "group": "Court record"}, {"id": "48", "file": "fillings/48_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit D: EHA employee handbook (July 2024)", "group": "Court record"}, {"id": "49", "file": "fillings/49_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affirmation of service", "group": "Court record"}, {"id": "50", "file": "fillings/50_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___ADJOU.pdf", "label": "Stipulation adjourning motion", "group": "Court record"}, {"id": "51", "file": "fillings/51_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__MEMORANDUM_OF_LAW_I.pdf", "label": "Daszak’s memorandum in opposition", "group": "Court record"}, {"id": "52", "file": "fillings/52_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIDAVIT_OR_AFFIRM.pdf", "label": "Daszak affidavit with cash-flow spreadsheets", "group": "Court record"}, {"id": "53", "file": "fillings/53_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___ADJOU.pdf", "label": "Stipulation adjourning motion", "group": "Court record"}, {"id": "54", "file": "fillings/54_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___ADJOU.pdf", "label": "Stipulation adjourning motion", "group": "Court record"}, {"id": "55", "file": "fillings/55_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance", "group": "Court record"}, {"id": "56", "file": "fillings/56_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__MEMORANDUM_OF_LAW_I.pdf", "label": "Defendants’ reply memorandum", "group": "Court record"}, {"id": "57", "file": "fillings/57_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__INTERROGATORIES.pdf", "label": "Interrogatories", "group": "Court record"}, {"id": "58", "file": "fillings/58_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_DEPOSITIO.pdf", "label": "Notice of deposition (Lisa Silvershein)", "group": "Court record"}, {"id": "59", "file": "fillings/59_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_DISCOVERY.pdf", "label": "Notice of discovery (documents)", "group": "Court record"}, {"id": "60", "file": "fillings/60_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Motion to stay discovery (17 Jul 2026)", "group": "Court record"}, {"id": "61", "file": "fillings/61_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Extension for Daszak’s counsel", "group": "Court record"}, {"id": "62", "file": "fillings/62_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Daszak’s opposition to stay (24 Jul 2026)", "group": "Court record"}, {"id": "63", "file": "fillings/63_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "New York Post article (21 Jul 2026), exhibit", "group": "Court record"}, {"id": "64", "file": "fillings/64_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIDAVIT_OF_FACTS.pdf", "label": "Daszak affidavit (July 2026)", "group": "Court record"}, {"id": "65", "file": "fillings/65_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Transcript: Zoom firing call (6 Jan 2025)", "group": "Court record"}, {"id": "66", "file": "fillings/66_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__DECISION___ORDER_ON.pdf", "label": "Decision and order (28 Jul 2026)", "group": "Court record"}, {"id": "67", "file": "fillings/67_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_ENTRY.pdf", "label": "Notice of entry (30 Jul 2026)", "group": "Court record"}, {"id": "68", "file": "fillings/68_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Order attached to notice of entry", "group": "Court record"}, {"id": "69", "file": "fillings/69_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Oral argument transcript (28 Jul 2026)", "group": "Court record"}, {"id": "70", "file": "fillings/70_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Proof of service of notice of entry", "group": "Court record"}, {"id": "71", "file": "fillings/71_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEAL.pdf", "label": "Notice of appeal (25 Aug 2026)", "group": "Court record"}];
+var DOCS=[{"id": "1", "file": "fillings/1_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__SUMMONS___COMPLAINT.pdf", "label": "Summons and complaint", "group": "Court record", "tab": "filings"}, {"id": "2", "file": "fillings/2_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__SUMMONS___COMPLAINT.pdf", "label": "Summons and complaint (second copy)", "group": "Court record", "tab": "filings"}, {"id": "3", "file": "fillings/3_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit: Daszak CV", "group": "Court record", "tab": "filings"}, {"id": "4", "file": "fillings/4_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit: EHA bylaws", "group": "Court record", "tab": "filings"}, {"id": "5", "file": "fillings/5_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit: staff severance table", "group": "Court record", "tab": "filings"}, {"id": "6", "file": "fillings/6_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "7", "file": "fillings/7_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "8", "file": "fillings/8_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "9", "file": "fillings/9_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "10", "file": "fillings/10_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "11", "file": "fillings/11_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "12", "file": "fillings/12_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "13", "file": "fillings/13_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "14", "file": "fillings/14_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "15", "file": "fillings/15_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "16", "file": "fillings/16_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "17", "file": "fillings/17_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "18", "file": "fillings/18_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "19", "file": "fillings/19_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "20", "file": "fillings/20_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "21", "file": "fillings/21_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "22", "file": "fillings/22_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "23", "file": "fillings/23_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service (Karen Denton attempt)", "group": "Court record", "tab": "filings"}, {"id": "24", "file": "fillings/24_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "25", "file": "fillings/25_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affidavit of service", "group": "Court record", "tab": "filings"}, {"id": "26", "file": "fillings/26_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance (Hoguet firm)", "group": "Court record", "tab": "filings"}, {"id": "27", "file": "fillings/27_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___TIME_.pdf", "label": "Stipulation extending time", "group": "Court record", "tab": "filings"}, {"id": "28", "file": "fillings/28_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance (Hoguet firm)", "group": "Court record", "tab": "filings"}, {"id": "29", "file": "fillings/29_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance (Jackson Lewis)", "group": "Court record", "tab": "filings"}, {"id": "30", "file": "fillings/30_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___TIME_.pdf", "label": "Stipulation extending time", "group": "Court record", "tab": "filings"}, {"id": "31", "file": "fillings/31_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__RJI__RE__OTHER.pdf", "label": "Request for judicial intervention", "group": "Court record", "tab": "filings"}, {"id": "32", "file": "fillings/32_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__ADDENDUM___COMMERCI.pdf", "label": "Commercial Division addendum", "group": "Court record", "tab": "filings"}, {"id": "33", "file": "fillings/33_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__REQUEST_FOR_PRE_MOT.pdf", "label": "Defendants’ request for pre-motion conference", "group": "Court record", "tab": "filings"}, {"id": "34", "file": "fillings/34_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Letter on response deadline", "group": "Court record", "tab": "filings"}, {"id": "35", "file": "fillings/35_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance (Jackson Lewis)", "group": "Court record", "tab": "filings"}, {"id": "36", "file": "fillings/36_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Daszak’s letter opposing pre-motion (19 Feb 2026)", "group": "Court record", "tab": "filings"}, {"id": "37", "file": "fillings/37_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__ORDER___OTHER__NON_.pdf", "label": "Order: no permission needed to file (24 Feb 2026)", "group": "Court record", "tab": "filings"}, {"id": "38", "file": "fillings/38_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_DISCOVERY.pdf", "label": "Notice of discovery (insurance policies)", "group": "Court record", "tab": "filings"}, {"id": "39", "file": "fillings/39_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__CONSENT_TO_CHANGE_A.pdf", "label": "Consent to change attorney", "group": "Court record", "tab": "filings"}, {"id": "40", "file": "fillings/40_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___BRIEF.pdf", "label": "Stipulation and brief", "group": "Court record", "tab": "filings"}, {"id": "41", "file": "fillings/41_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__BRIEFING_SCHEDULE.pdf", "label": "Briefing schedule", "group": "Court record", "tab": "filings"}, {"id": "42", "file": "fillings/42_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_MOTION.pdf", "label": "Notice of motion to dismiss", "group": "Court record", "tab": "filings"}, {"id": "43", "file": "fillings/43_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__MEMORANDUM_OF_LAW_I.pdf", "label": "Defendants’ memorandum of law", "group": "Court record", "tab": "filings"}, {"id": "44", "file": "fillings/44_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIDAVIT_OR_AFFIRM.pdf", "label": "Affirmation of Joseph Anci", "group": "Court record", "tab": "filings"}, {"id": "45", "file": "fillings/45_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit A: House subcommittee hearing (1 May 2024)", "group": "Court record", "tab": "filings"}, {"id": "46", "file": "fillings/46_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit B: House staff report", "group": "Court record", "tab": "filings"}, {"id": "47", "file": "fillings/47_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit C: HHS suspension and debarment notice", "group": "Court record", "tab": "filings"}, {"id": "48", "file": "fillings/48_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Exhibit D: EHA employee handbook (July 2024)", "group": "Court record", "tab": "filings"}, {"id": "49", "file": "fillings/49_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Affirmation of service", "group": "Court record", "tab": "filings"}, {"id": "50", "file": "fillings/50_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___ADJOU.pdf", "label": "Stipulation adjourning motion", "group": "Court record", "tab": "filings"}, {"id": "51", "file": "fillings/51_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__MEMORANDUM_OF_LAW_I.pdf", "label": "Daszak’s memorandum in opposition", "group": "Court record", "tab": "filings"}, {"id": "52", "file": "fillings/52_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIDAVIT_OR_AFFIRM.pdf", "label": "Daszak affidavit with cash-flow spreadsheets", "group": "Court record", "tab": "filings"}, {"id": "53", "file": "fillings/53_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___ADJOU.pdf", "label": "Stipulation adjourning motion", "group": "Court record", "tab": "filings"}, {"id": "54", "file": "fillings/54_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__STIPULATION___ADJOU.pdf", "label": "Stipulation adjourning motion", "group": "Court record", "tab": "filings"}, {"id": "55", "file": "fillings/55_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEARANC.pdf", "label": "Notice of appearance", "group": "Court record", "tab": "filings"}, {"id": "56", "file": "fillings/56_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__MEMORANDUM_OF_LAW_I.pdf", "label": "Defendants’ reply memorandum", "group": "Court record", "tab": "filings"}, {"id": "57", "file": "fillings/57_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__INTERROGATORIES.pdf", "label": "Interrogatories", "group": "Court record", "tab": "filings"}, {"id": "58", "file": "fillings/58_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_DEPOSITIO.pdf", "label": "Notice of deposition (Lisa Silvershein)", "group": "Court record", "tab": "filings"}, {"id": "59", "file": "fillings/59_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_DISCOVERY.pdf", "label": "Notice of discovery (documents)", "group": "Court record", "tab": "filings"}, {"id": "60", "file": "fillings/60_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Motion to stay discovery (17 Jul 2026)", "group": "Court record", "tab": "filings"}, {"id": "61", "file": "fillings/61_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Extension for Daszak’s counsel", "group": "Court record", "tab": "filings"}, {"id": "62", "file": "fillings/62_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__LETTER___CORRESPOND.pdf", "label": "Daszak’s opposition to stay (24 Jul 2026)", "group": "Court record", "tab": "filings"}, {"id": "63", "file": "fillings/63_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "New York Post article (21 Jul 2026), exhibit", "group": "Court record", "tab": "filings"}, {"id": "64", "file": "fillings/64_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIDAVIT_OF_FACTS.pdf", "label": "Daszak affidavit (July 2026)", "group": "Court record", "tab": "filings"}, {"id": "65", "file": "fillings/65_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Transcript: Zoom firing call (6 Jan 2025)", "group": "Court record", "tab": "filings"}, {"id": "66", "file": "fillings/66_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__DECISION___ORDER_ON.pdf", "label": "Decision and order (28 Jul 2026)", "group": "Court record", "tab": "filings"}, {"id": "67", "file": "fillings/67_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_ENTRY.pdf", "label": "Notice of entry (30 Jul 2026)", "group": "Court record", "tab": "filings"}, {"id": "68", "file": "fillings/68_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Order attached to notice of entry", "group": "Court record", "tab": "filings"}, {"id": "69", "file": "fillings/69_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__EXHIBIT_S_.pdf", "label": "Oral argument transcript (28 Jul 2026)", "group": "Court record", "tab": "filings"}, {"id": "70", "file": "fillings/70_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__AFFIRMATION_AFFIDAV.pdf", "label": "Proof of service of notice of entry", "group": "Court record", "tab": "filings"}, {"id": "71", "file": "fillings/71_164611_2025_Dr_Peter_Daszak_Ph_D_v_Dr_Peter_Daszak_Ph_D__NOTICE_OF_APPEAL.pdf", "label": "Notice of appeal (25 Aug 2026)", "group": "Court record", "tab": "filings"}, {"id": "E2009", "file": "990s/EHA_Form990_2008-09.pdf", "label": "Form 990: 2008-09 (year to 30 June 2009)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2010", "file": "990s/EHA_Form990_2009-10.pdf", "label": "Form 990: 2009-10 (year to 30 June 2010)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2011", "file": "990s/EHA_Form990_2010-11.pdf", "label": "Form 990: 2010-11 (year to 30 June 2011)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2012", "file": "990s/EHA_Form990_2011-12.pdf", "label": "Form 990: 2011-12 (year to 30 June 2012)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2013", "file": "990s/EHA_Form990_2012-13.pdf", "label": "Form 990: 2012-13 (year to 30 June 2013)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2014", "file": "990s/EHA_Form990_2013-14.pdf", "label": "Form 990: 2013-14 (year to 30 June 2014)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2015", "file": "990s/EHA_Form990_2014-15.pdf", "label": "Form 990: 2014-15 (year to 30 June 2015)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E1516", "file": "990s/EHA_Form990_2015-16.pdf", "label": "Form 990: 2015-16 (year to 30 June 2016)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E1617", "file": "990s/EHA_Form990_2016-17.pdf", "label": "Form 990: 2016-17 (year to 30 June 2017)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E1718", "file": "990s/EHA_Form990_2017-18.pdf", "label": "Form 990: 2017-18 (year to 30 June 2018)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E1819", "file": "990s/EHA_Form990_2018-19.pdf", "label": "Form 990: 2018-19 (year to 30 June 2019)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E1920", "file": "990s/EHA_Form990_2019-20.pdf", "label": "Form 990: 2019-20 (year to 30 June 2020)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2021", "file": "990s/EHA_Form990_2020-21.pdf", "label": "Form 990: 2020-21 (year to 30 June 2021)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2122", "file": "990s/EHA_Form990_2021-22.pdf", "label": "Form 990: 2021-22 (year to 30 June 2022)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2223", "file": "990s/EHA_Form990_2022-23.pdf", "label": "Form 990: 2022-23 (year to 30 June 2023)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2324", "file": "990s/EHA_Form990_2023-24.pdf", "label": "Form 990: 2023-24 (year to 30 June 2024)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2425", "file": "990s/EHA_Form990_2024-25.pdf", "label": "Form 990: 2024-25 (year to 30 June 2025)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "E2526", "file": "990s/EHA_Form990_2025-26.pdf", "label": "Form 990: 2025-26 (year to 30 June 2026)", "group": "EHA Form 990s", "tab": "returns"}, {"id": "T1819", "file": "990s/EHA_Form990-T_2018-19.pdf", "label": "Form 990-T (unrelated business income): 2018-19", "group": "EHA Form 990s", "tab": "returns"}, {"id": "W2021", "file": "990s/Wallace_Research_Foundation_Form990_2021.pdf", "label": "Wallace Research Foundation: Form 990, 2021", "group": "Wallace Research Foundation (funder)", "tab": "returns"}, {"id": "W2022", "file": "990s/Wallace_Research_Foundation_Form990_2022.pdf", "label": "Wallace Research Foundation: Form 990, 2022", "group": "Wallace Research Foundation (funder)", "tab": "returns"}, {"id": "NHG", "file": "990s/NHG_Form990-EZ_2025_redacted.pdf", "label": "Nature Health Global: Form 990-EZ, 2025 (address redacted)", "group": "Nature Health Global", "tab": "returns"}];
 if (window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
 var $=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))},b=document.body,root=document.documentElement,mainScroll=document.querySelector('main');
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){}}
@@ -1530,16 +1540,31 @@ function applyTheme(name,persist){
 el('themeSelect').onchange=function(){applyTheme(this.value,true)};
 
 /* ---- document list ---- */
-var dsel=el('dsel'),dopen=el('dopen'),cur=-1;
-(function buildSel(){
- var groups={};
- DOCS.forEach(function(d){(groups[d.group]=groups[d.group]||[]).push(d)});
- Object.keys(groups).forEach(function(g){
+var dsel=el('dsel'),dopen=el('dopen'),cur=-1,pdfTab=null;
+/* the document list shows only the active tab: 'filings' (Court Fillings) or 'returns' (990s) */
+function tabDocs(){return DOCS.filter(function(d){return d.tab===pdfTab})}
+function buildSel(){
+ dsel.innerHTML='';
+ var groups={},order=[];
+ tabDocs().forEach(function(d){if(!groups[d.group]){groups[d.group]=[];order.push(d.group)}groups[d.group].push(d)});
+ order.forEach(function(g){
   var og=document.createElement('optgroup');og.label=g;
-  groups[g].forEach(function(d){var o=document.createElement('option');o.value=d.id;o.textContent=(d.group==='Court record'?'Doc '+d.id+' · ':'')+d.label;og.appendChild(o)});
+  groups[g].forEach(function(d){var o=document.createElement('option');o.value=d.id;o.textContent=(d.tab==='filings'?'Doc '+d.id+' · ':'')+d.label;og.appendChild(o)});
   dsel.appendChild(og);
  });
-})();
+}
+function setPdfTab(name){
+ pdfTab=name;
+ $('.pdf-tab').forEach(function(t){var on=t.dataset.ptab===name;t.classList.toggle('on',on);t.setAttribute('aria-selected',on)});
+ ls('pdftab',name);
+ buildSel();
+}
+/* clicking a tab returns to the document last viewed in it */
+$('.pdf-tab').forEach(function(t){t.onclick=function(){
+ var name=t.dataset.ptab,last=ls('pdflast-'+name),list=DOCS.filter(function(d){return d.tab===name});
+ var d=(last&&docIndex(last)>=0)?DOCS[docIndex(last)]:list[0];
+ if(d)openDoc(docIndex(d.id));
+}});
 function docIndex(id){for(var i=0;i<DOCS.length;i++)if(DOCS[i].id===String(id))return i;return -1}
 
 /* ---- PDF viewer (pdf.js, canvas), with the view and zoom controls of the Fauci Diary app ---- */
@@ -1615,11 +1640,15 @@ function buildContinuous(){
 function renderCurrent(){
  if(viewMode==='cont')buildContinuous();else renderSingle();
 }
+/* page to open at, set by a link such as #doc:E2425:44; consumed by the next openDoc */
+var pendingPage=0;
 function openDoc(i){
  if(i<0||i>=DOCS.length)return;
  cur=i;var d=DOCS[i];
+ if(d.tab!==pdfTab)setPdfTab(d.tab);
+ ls('pdflast-'+d.tab,d.id);
  dsel.value=d.id;dopen.href=encodeURI(d.file);ls('doc',d.id);
- var tok=++loadTok;
+ var tok=++loadTok;var want=pendingPage;pendingPage=0;
  pdfDoc=null;pageNum=1;single.width=0;single.height=0;single2.width=0;single2.height=0;
  $('.pdf-cont',scroller).forEach(function(n){n.remove()});
  el('ppTotal').textContent='–';
@@ -1628,7 +1657,7 @@ function openDoc(i){
   if(tok!==loadTok)return;
   pdfDoc=doc;status('');
   el('ppTotal').textContent=doc.numPages;el('ppInput').max=doc.numPages;
-  scroller.scrollTop=0;renderCurrent();
+  if(want)pageNum=Math.max(1,Math.min(doc.numPages,want));scroller.scrollTop=0;renderCurrent();if(want&&viewMode==='cont')goPage(pageNum);
  }).catch(function(){
   if(tok!==loadTok)return;
   status('Could not load this document. Start the case viewer (Open_Case_Explainer.command) or use Open ↗.');
@@ -1659,8 +1688,13 @@ scroller.addEventListener('scroll',function(){
 },{passive:true});
 
 dsel.onchange=function(){openDoc(docIndex(dsel.value))};
-el('dprev').onclick=function(){openDoc(cur-1)};
-el('dnext').onclick=function(){openDoc(cur+1)};
+/* previous / next step through the active tab's documents only */
+function stepDoc(k){
+ var list=tabDocs(),p=list.findIndex(function(d){return d.id===DOCS[cur].id}),t=list[p+k];
+ if(t)openDoc(docIndex(t.id));
+}
+el('dprev').onclick=function(){stepDoc(-1)};
+el('dnext').onclick=function(){stepDoc(1)};
 var step=function(){return viewMode==='double'?2:1};
 el('ppPrev').onclick=function(){goPage(pageNum-step())};
 el('ppNext').onclick=function(){goPage(pageNum+step())};
@@ -1675,7 +1709,7 @@ el('zOut').onclick=function(){setZoom('num',Math.max(25,(zoom==='num'?zoomPct:la
 el('viewMode').onchange=function(){viewMode=this.value;ls('view',viewMode);scroller.scrollTop=0;renderCurrent()};
 document.addEventListener('click',function(e){
  var a=e.target.closest&&e.target.closest('a.docref');
- if(!a)return;e.preventDefault();openDoc(docIndex(a.dataset.doc));
+ if(!a)return;e.preventDefault();pendingPage=parseInt(a.dataset.page||'0',10)||0;openDoc(docIndex(a.dataset.doc));
 });
 /* keyboard: arrows act on the PDF only while the pointer or focus is in the PDF panel */
 var pdfActive=false,pdfPane=el('pdf');
