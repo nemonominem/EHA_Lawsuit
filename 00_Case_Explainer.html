@@ -263,7 +263,7 @@ body.side-collapsed #side{width:var(--rail)}
 body.side-collapsed .side-body,body.side-collapsed #sideRz{display:none}
 body.side-collapsed .side-head{flex-direction:column;justify-content:flex-start;padding:8px 0;gap:10px;height:100%}
 body.side-collapsed .side-title{writing-mode:vertical-rl;transform:rotate(180deg)}
-main{margin-left:var(--side-w);height:calc(100vh - var(--head));overflow-y:scroll;overflow-x:hidden;scrollbar-gutter:stable;padding:20px 24px 80px;transition:margin .2s,height .2s;scroll-behavior:smooth;scroll-padding-top:100px}
+main{margin-left:var(--side-w);height:calc(100vh - var(--head));overflow-y:scroll;overflow-x:hidden;scrollbar-gutter:stable;padding:0 24px 80px;transition:margin .2s,height .2s;scroll-behavior:smooth;scroll-padding-top:100px}
 body.side-collapsed main{margin-left:var(--rail)}
 body.pdf-landscape main{margin-right:var(--pdf-w)}
 body.pdf-portrait main{height:calc(100vh - var(--head) - var(--pdf-h))}
@@ -282,7 +282,7 @@ body.pdf-portrait main{height:calc(100vh - var(--head) - var(--pdf-h))}
 .intro{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:8px;padding:6px 18px;margin-bottom:18px;font-size:15px}.about{font-size:16px}.about.sig{margin-top:22px;font-size:16px}
 
 /* part chips */
-.tabs{position:sticky;top:0;z-index:10;background:var(--bg);display:flex;flex-wrap:nowrap;margin:0 0 22px;padding:8px 0 0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
+.tabs{position:sticky;top:0;z-index:10;background:var(--bg);display:flex;flex-wrap:nowrap;margin:0 0 22px;padding:20px 0 0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
 .tabs:after{content:'';flex:1 0 0;min-width:0;border-bottom:2px solid var(--line-strong)}
 .tab{flex:0 0 auto;font:600 16px -apple-system,sans-serif;background:transparent;border:1px solid transparent;border-bottom:2px solid var(--line-strong);border-radius:10px 10px 0 0;padding:11px 14px;color:var(--mute);cursor:pointer;white-space:nowrap}
