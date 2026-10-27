@@ -1487,6 +1487,8 @@ Daszak has done very well out of his own real estate. He most likely holds a hou
   <span class="pg">/ <span id="ppTotal">–</span></span>
   <button class="ib" id="ppNext">Next ▶</button>
   <span class="sep"></span>
+  <button class="ib" id="rotL" title="Rotate left" aria-label="Rotate left">↺</button>
+  <button class="ib" id="rotR" title="Rotate right" aria-label="Rotate right">↻</button>
   <span id="zoomPct">–</span>
   <button class="ib" id="zOut" aria-label="Zoom out">−</button>
   <button class="ib" id="zIn" aria-label="Zoom in">+</button>
@@ -1589,10 +1591,13 @@ function cssScale(base){
  el('zoomPct').textContent=(zoom==='num'?zoomPct:lastPct)+'%';
  return s;
 }
+/* rotation: each document remembers its own turn (0, 90, 180, 270), added to the page's own rotation */
+function docTurn(){var d=DOCS[cur];if(!d)return 0;var v=parseInt(ls('rot-'+d.id),10);return isNaN(v)?0:v}
+function pageRot(page){return ((page.rotate||0)+docTurn())%360}
 function paint(page,canvas,token,tokenRef){
- var base=page.getViewport({scale:1});
+ var base=page.getViewport({scale:1,rotation:pageRot(page)});
  var s=cssScale(base),dpr=window.devicePixelRatio||1;
- var vp=page.getViewport({scale:s*dpr});
+ var vp=page.getViewport({scale:s*dpr,rotation:pageRot(page)});
  canvas.width=Math.floor(vp.width);canvas.height=Math.floor(vp.height);
  canvas.style.width=(vp.width/dpr)+'px';canvas.style.height=(vp.height/dpr)+'px';
  return page.render({canvasContext:canvas.getContext('2d'),viewport:vp}).promise;
@@ -1702,6 +1707,9 @@ el('ppInput').onchange=function(){goPage(this.value)};
 function setZoom(z,pct){
  zoom=z;if(pct)zoomPct=pct;renderCurrent();
 }
+function turnDoc(delta){var d=DOCS[cur];if(!d)return;var v=(docTurn()+delta+360)%360;ls('rot-'+d.id,v);renderCurrent()}
+el('rotL').onclick=function(){turnDoc(-90)};
+el('rotR').onclick=function(){turnDoc(90)};
 el('zWidth').onclick=function(){setZoom('width')};
 el('zHeight').onclick=function(){setZoom('height')};
 el('zIn').onclick=function(){setZoom('num',Math.min(400,(zoom==='num'?zoomPct:lastPct)+10))};
